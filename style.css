@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poping';
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+header{
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background-color: rgba(27, 16, 16, 0.815);
+    backdrop-filter: blur(8px);
+    color:rgb(84, 60, 60);
+    padding: 0.5rem 1.5rem;
+    border-radius: 3rem;
+    z-index: 1000;
+} 
+.logo{
+    color: rgb(252, 246, 246);
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-wrap: nowrop;
+    transition: 0.3s ease-in-out;
+
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.nav-links{
+    display: flex;
+    gap: 2rem;
+
+}
+li a{
+    position: relative;
+    color: rgb(246, 246, 246);
+    font-weight: 300;
+}
+li a::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    left: 0;
+    height: 5px;
+    top: 25px;
+    border-radius: 1rem;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right,rgb(0, 157, 255),rgb(255, 0, 255));
+} 
+li a:hover::before{
+    width: 100;
+}
+.visit-btn{
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(16, 4, 4);
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right,rgb(0, 157, 255),rgb(255, 0, 255));
+    
+}
+.visit-btn:hover{
+   background: linear-gradient(to right,rgb(0, 157, 255),rgb(255, 0, 255));
+   transition: 0.2 ease-in-out;
+   transform: scale(1.1);
+}
+#menu-icon{
+    font-size: 3rem;
+    display: none;
+}
+
+section{
+    min-height: 50vh;
+    padding: 9rem 12%;
+    width: 90rem;
+    position: relative;
+}
+.about{
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+.about .about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.about img{
+    width: 30vw;
+    border-radius: 60%;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+}
+.info-box h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.info-box h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.info-box span{
+    background: linear-gradient(to right,rgb(24, 123, 185),rgb(255, 0, 255));
+    background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+}
+.btn-group{
+    display: flex;
+    gap: 1rem;
+}
+.btn{
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+    font-weight: 500;
+    text-wrap: nowrem;
+    transition: 0.2s ease-in-out; 
+}
+.btn:hover{
+    background-color: rgb(127, 24, 217);
+    color: rgb(248, 236, 12);
+}
+.socials{
+    display: flexbox;
+    gap: 2rem;
+}
+.socials i{
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.2 ease-in-out;
+}
+.socials i:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+.section-title {
+    display: grid;
+    font-size:5rem;
+}
+
+  
+
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,3fr));
+    gap: 7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.projects-card1{
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    border: 8px solid rgb(133, 133, 158);
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.projects-card1:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-10px)scale(1.02);
+}
+.projects-card1 img{
+    width: 20vw;
+    border-radius: 20%;
+    gap: 1rem;
+}
+
+
+.projects-card2{
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    border: 8px solid rgb(133, 133, 158);
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.projects-card2:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-10px)scale(1.02);
+}
+.projects-card2 img{
+    width: 20vw;
+    border-radius: 20%;
+}
+
+
+
+.projects-card3{
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    border: 8px solid rgb(133, 133, 158);
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.projects-card3:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-10px)scale(1.02);
+}
+.projects-card3 img{
+    width: 20vw;
+    border-radius: 20%;
+}
+
+
+.projects-card4{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    border: 8px solid rgb(133, 133, 158);
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out; 
+}
+.projects-card4:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-10px)scale(1.02);
+}
+.projects-card4 img{
+    width: 20vw;
+    border-radius: 20%;
+    
+}
+
+.projects-card5{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    border: 8px solid rgb(133, 133, 158);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.projects-card5:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-10px)scale(1.02);
+}
+.projects-card5 img{
+    width: 20vw;
+    border-radius: 20%;
+}
